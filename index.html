@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#ffe1ed" />
+  <title>A Little Surprise for Chuzzzzy 💗</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="floating-hearts" aria-hidden="true"></div>
+  <button class="music-toggle" id="musicToggle" aria-label="Toggle music">♫ Music: off</button>
+
+  <main>
+    <section class="screen active" id="lockScreen">
+      <div class="lock-card">
+        <div class="tiny-label">A LITTLE SOMETHING FOR YOU</div>
+        <div class="lock-flower">🌸</div>
+        <h1>Hey, Chuzzzzy!</h1>
+        <p class="subtitle">Someone made a tiny world just for you.</p>
+        <p class="prompt">Enter our secret code</p>
+        <div class="dots" id="dots"><span></span><span></span><span></span><span></span></div>
+        <div class="keypad" id="keypad">
+          <button data-num="1">1</button><button data-num="2">2</button><button data-num="3">3</button>
+          <button data-num="4">4</button><button data-num="5">5</button><button data-num="6">6</button>
+          <button data-num="7">7</button><button data-num="8">8</button><button data-num="9">9</button>
+          <button class="soft-key" data-action="clear">⌫</button><button data-num="0">0</button><button class="soft-key" data-action="enter">♡</button>
+        </div>
+        <p class="hint" id="lockHint">Hint: a special year ✨</p>
+      </div>
+    </section>
+
+    <section class="screen" id="welcomeScreen">
+      <div class="welcome-card">
+        <span class="eyebrow">MADE WITH SO MUCH LOVE</span>
+        <h1>Happy Birthday,<br><span>Chuzzzzy!</span> 🎂</h1>
+        <p class="subtitle">Today, this little corner of the internet belongs to you.</p>
+        <img class="hero-photo" src="images/birthday-girl.png" alt="Birthday girl in a pink festive outfit" />
+        <p class="handwritten">Ready for your surprise?</p>
+        <div class="button-row">
+          <button class="primary-btn" id="yesBtn">YES, SHOW ME 💗</button>
+          <button class="secondary-btn" id="noBtn">Not yet 🙈</button>
+        </div>
+        <p class="hint" id="welcomeHint"></p>
+      </div>
+    </section>
+
+    <section class="screen" id="giftScreen">
+      <div class="section-card gift-card">
+        <span class="eyebrow">A LITTLE SURPRISE</span>
+        <h2>Something is waiting for you…</h2>
+        <p class="subtitle">Tap the gift and let the magic happen.</p>
+        <button class="gift-box" id="giftBox" aria-label="Open the gift"><span class="gift-bow">🎀</span><span class="gift-emoji">🎁</span></button>
+        <p class="hint" id="giftHint">Psst… tap the gift! 💝</p>
+        <button class="primary-btn hidden" id="memoriesBtn">OPEN OUR MEMORIES →</button>
+      </div>
+    </section>
+
+    <section class="screen" id="memoriesScreen">
+      <div class="section-card wide-card">
+        <span class="eyebrow">LITTLE MOMENTS, BIG MEMORIES</span>
+        <h2>Our little scrapbook 📸</h2>
+        <p class="subtitle">A few moments worth keeping close.</p>
+        <div class="memory-grid">
+          <figure class="polaroid tilt-left">
+            <img src="images/memory-mirror.jpg" alt="A mirror selfie together" />
+            <figcaption>One for the memory book 💞</figcaption>
+          </figure>
+          <figure class="polaroid tilt-right">
+            <img src="images/memory-maroon.jpg" alt="A shared moment in maroon and cream outfits" />
+            <figcaption>That look you gave me 🥹</figcaption>
+          </figure>
+          <figure class="polaroid tilt-left">
+            <img src="images/memory-blue-pink.png" alt="Together in blue and pink" />
+            <figcaption>Us, being us 🌷</figcaption>
+          </figure>
+          <figure class="polaroid tilt-right">
+            <img src="images/birthday-look-colorful.jpg" alt="Birthday girl in a colourful traditional outfit" />
+            <figcaption>Pretty in every colour ✨</figcaption>
+          </figure>
+          <figure class="polaroid tilt-left">
+            <img src="images/birthday-look-night.jpg" alt="Birthday girl in a festive outfit at night" />
+            <figcaption>Main character energy 💗</figcaption>
+          </figure>
+        </div>
+        <div class="button-row">
+          <button class="secondary-btn" id="backGiftBtn">← Back</button>
+          <button class="primary-btn" id="letterBtn">A LETTER FOR YOU 💌</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="screen" id="letterScreen">
+      <div class="letter-wrap">
+        <span class="eyebrow">FROM SIMM SIMM, WITH LOVE</span>
+        <div class="letter-paper">
+          <div class="letter-flower">🌷</div>
+          <h2>Dear Chuzzzzy,</h2>
+          <p>Happy birthday, Chuzzy! 💗</p>
+          <p>Aaj ek bohot special day hai, kyunki aaj meri ek bohot achhi dost ka birthday hai. I wish ki tu hamesha khush rahe, life mein bohot successful ho aur tere face par ye smile hamesha bani rahe.</p>
+          <p>Main bas chahta hoon ki tu khush rahe — chahe main teri life mein rahun ya na rahun. Teri happiness aur tera future bohot important hai. I hope tujhe life mein woh saari khushiyan milein jo tu deserve karti hai.</p>
+          <p>Thank you for being you, for the memories, the laughs and all those little moments jo apne aap mein special hain. Aaj ka din enjoy karna, खूब saari smiles karna, aur apne liye bhi thoda extra cake rakhna. 🎂</p>
+          <p>Stay happy, stay blessed, and keep shining, birthday girl. You deserve the best. 🫶</p>
+          <p class="signature">With love,<br><strong>Simm Simm ❤️</strong></p>
+        </div>
+        <div class="button-row">
+          <button class="secondary-btn" id="backMemoriesBtn">← Memories</button>
+          <button class="primary-btn" id="cakeBtn">ONE LAST SURPRISE 🎂</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="screen" id="cakeScreen">
+      <div class="section-card cake-card">
+        <span class="eyebrow">MAKE A WISH</span>
+        <h2>One wish, just for you ✨</h2>
+        <p class="subtitle">Tap the candles and make your birthday wish!</p>
+        <div class="cake-scene">
+          <div class="candles"><button class="candle" aria-label="Blow candle">🕯️</button><button class="candle" aria-label="Blow candle">🕯️</button><button class="candle" aria-label="Blow candle">🕯️</button></div>
+          <div class="cake-top"></div><div class="cake-body">💗</div><div class="cake-plate"></div>
+        </div>
+        <p id="wishMessage" class="handwritten">Close your eyes and wish for something beautiful.</p>
+        <button class="primary-btn" id="finalBtn">A HUG FROM SIMM SIMM 💞</button>
+        <p class="hint">Happy birthday, Chuzzzzy. Keep smiling! 🌸</p>
+      </div>
+    </section>
+
+    <section class="screen" id="finalScreen">
+      <div class="section-card final-card">
+        <div class="big-heart">💗</div>
+        <h1>That's all, birthday girl!</h1>
+        <p class="subtitle">This little website is a reminder that you matter and you deserve lots of happiness.</p>
+        <img class="final-photo" src="images/birthday-girl.png" alt="Birthday girl" />
+        <p class="handwritten">Always keep that smile, Chuzzzzy. 🌷</p>
+        <p class="signature">— Simm Simm</p>
+        <button class="secondary-btn" id="restartBtn">Watch it again ↻</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>made with 💗 for Chuzzzzy · by Simm Simm</footer>
+  <script src="script.js"></script>
+</body>
+</html>
